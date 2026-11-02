@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151210">
+  <meta name="description" content="午夜选角：你更像哪位恐影主角？跟随第一直觉，找到与你相映的银幕人物。">
+  <meta property="og:title" content="午夜选角 · 你更像哪位恐影主角？">
+  <meta property="og:description" content="32 幕午夜放映，8 种角色回声。你更像哪位恐影主角？">
+  <meta property="og:type" content="website">
+  <title>午夜选角 · 你更像哪位恐影主角？</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preload" as="image" href="./assets/midnight-theater.webp" fetchpriority="high">
+  <link rel="stylesheet" href="./styles.css?v=5">
+  <link rel="stylesheet" href="./experience.css?v=5">
+  <script type="module" src="./app.js?v=5"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="site-shell" id="top">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="午夜选角，返回首页顶部">
+        <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M2 10V2h8M18 2h8v8M26 18v8h-8M10 26H2v-8"/><path d="m9 19 5-10 5 10M11 15h6"/></svg>
+        <span>午夜选角</span>
+      </a>
+      <span class="header-edition">MIDNIGHT CASTING <i></i> VOL. 01</span>
+      <nav class="header-nav" aria-label="主要导航">
+        <a class="nav-cast" href="#cast">本场卡司 <span aria-hidden="true">↙</span></a>
+        <button class="text-button" type="button" data-open="about">关于本场 <span aria-hidden="true">↗</span></button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="main-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="red-dot" aria-hidden="true"></span>一场关于你的深夜试镜 <span class="eyebrow-rule" aria-hidden="true"></span></div>
+          <h1 id="main-title"><span>午夜</span><span class="title-second">选角<span class="title-star" aria-hidden="true">✳</span></span></h1>
+          <h2 class="hero-question">你更像哪位恐影主角？</h2>
+          <p class="hero-poem">野心、亲密、自由与失控。<br>跟随第一直觉，找到与你相映的银幕人物。</p>
+
+          <div class="entry-block">
+            <button class="entry-ticket" type="button" data-action="start" aria-describedby="entry-status">
+              <span class="ticket-copy"><span class="ticket-en">YOUR AUDITION STARTS HERE</span><span class="ticket-label">开始选角</span></span>
+              <span class="ticket-stub" aria-hidden="true">↗</span>
+            </button>
+            <p class="test-facts"><span><b>08</b> 位角色</span><i aria-hidden="true"></i><span>约 <b>32</b> 题</span><i aria-hidden="true"></i><span>预计 <b>5–8</b> 分钟</span></p>
+            <p class="entry-status" id="entry-status">32 幕，一场午夜放映。</p>
+          </div>
+
+          <div class="hero-footnote"><span class="footnote-line" aria-hidden="true"></span><span>无需观影知识，带上你自己就好。</span></div>
+        </div>
+
+        <div class="hero-art">
+          <div class="art-topline"><span>THE MIDNIGHT SCREEN</span><span>FRAME / 001</span></div>
+          <figure class="cinema-poster">
+            <img src="./assets/midnight-theater.webp" alt="午夜的老电影院，暗红色幕帘、柔和的银幕与一张留出的座位。" width="1122" height="1402" fetchpriority="high">
+            <div class="screen-message" aria-hidden="true"><span>AN OPEN CALL</span><strong>THE ROLE<br>IS YOURS.</strong><small>AT MIDNIGHT</small></div>
+            <span class="poster-corner corner-tl" aria-hidden="true"></span><span class="poster-corner corner-tr" aria-hidden="true"></span><span class="poster-corner corner-bl" aria-hidden="true"></span><span class="poster-corner corner-br" aria-hidden="true"></span>
+            <figcaption><span class="caption-number">00:00</span><span>今晚，银幕为你留了一个位置。</span></figcaption>
+          </figure>
+          <div class="art-bottomline"><span>DESIRE. IDENTITY. SURVIVAL.</span><span>请随直觉入座 <span aria-hidden="true">↓</span></span></div>
+        </div>
+      </section>
+
+      <div class="intermission-line" aria-hidden="true"><span>THE SCREEN IS A MIRROR.</span><span class="intermission-symbol">✳</span><span>EVERY CHOICE REVEALS A ROLE.</span></div>
+
+      <section class="cast-section" id="cast" aria-labelledby="cast-title">
+        <div class="section-heading"><div><p class="section-eyebrow">FEATURING / 本场人物</p><h2 id="cast-title">八位主角，八种回声。</h2></div><p class="section-aside">有些熟悉，<br>发生在你叫出名字之前。</p></div>
+        <div class="cast-grid" aria-label="本场八位角色，点击查看人物介绍">
+          <button class="cast-entry" type="button" data-character="pearl"><span class="cast-index">01</span><span class="cast-info"><strong>Pearl</strong><small>《珀尔》 / PEARL</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="sue"><span class="cast-index">02</span><span class="cast-info"><strong>Sue</strong><small>《某种物质》 / THE SUBSTANCE</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="lizzie"><span class="cast-index">03</span><span class="cast-info"><strong>Lizzie Borden</strong><small>《怪物：丽兹·玻顿的故事》</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="nikki"><span class="cast-index">04</span><span class="cast-info"><strong>Nikki</strong><small>《痴迷》 / OBSESSION</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="anna"><span class="cast-index">05</span><span class="cast-info"><strong>Anna</strong><small>《着魔》 / POSSESSION</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="dani"><span class="cast-index">06</span><span class="cast-info"><strong>Dani Ardor</strong><small>《仲夏夜惊魂》 / MIDSOMMAR</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="jennifer"><span class="cast-index">07</span><span class="cast-info"><strong>Jennifer Check</strong><small>《詹妮弗的肉体》 / JENNIFER’S BODY</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+          <button class="cast-entry" type="button" data-character="carrie"><span class="cast-index">08</span><span class="cast-info"><strong>Carrie White</strong><small>《魔女嘉莉》 / CARRIE</small></span><span class="cast-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <p class="cast-note">以影视人物为参照的趣味探索 <span aria-hidden="true">·</span> 人物介绍不含关键结局剧透</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a href="#top">午夜选角 <span>© 2026</span></a><span class="footer-note">32 幕午夜放映 · 8 种角色回声</span><span class="footer-en">PLEASE, TAKE YOUR SEAT.</span></footer>
+  </div>
+
+  <dialog class="cinema-dialog" id="info-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span id="dialog-kicker">MIDNIGHT CASTING</span><button class="dialog-close" type="button" aria-label="关闭弹窗">×</button></div>
+    <div class="dialog-content"><p class="dialog-film" id="dialog-film" hidden></p><h2 id="dialog-title"></h2><div class="dialog-tags" id="dialog-tags"></div><div class="dialog-body" id="dialog-body"></div><p class="dialog-note" id="dialog-note"></p><div class="dialog-actions"><button class="dialog-primary" id="dialog-primary" type="button">回到放映厅 <span aria-hidden="true">↗</span></button></div></div>
+  </dialog>
+</body>
+</html>
